@@ -673,6 +673,7 @@
 				0041C5E713BA7B8A0015FC22 /* Frameworks */,
 				42A8C224144CF556005B9CF8 /* Resources */,
 				0041C5E813BA7B8A0015FC22 /* Headers */,
+				AA362C5516432C9400423F2A /* Export Public Headers */,
 			);
 			buildRules = (
 			);
@@ -802,6 +803,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = ../Scripts/PrepareUITests.sh;
+		};
+		AA362C5516432C9400423F2A /* Export Public Headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Export Public Headers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/../Scripts/export-public-headers.sh";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
