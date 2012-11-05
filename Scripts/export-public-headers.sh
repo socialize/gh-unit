@@ -6,7 +6,7 @@ DEST="${CONFIGURATION_BUILD_DIR}/GHUnitIOS"
 
 mkdir -p "${DEST}"
 
-find . -type d -name Examples -prune \
+find "${PROJECT_DIR}/.." -type d -name Examples -prune \
   -o -type d -name Tests -prune \
   -o -type d -name build -prune \
-  -o -name '*.h' -print0 | xargs -0 -I{} cp {} "${CONFIGURATION_BUILD_DIR}/GHUnitIOS"
+  -o -name '*.h' -print0 | xargs -0 -I{} cp -v {} "${DEST}"
